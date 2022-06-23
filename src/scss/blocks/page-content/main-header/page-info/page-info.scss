@@ -1,0 +1,28 @@
+.page-info {
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__headline {
+    font-size: 1.75rem;
+    margin: 1.5rem 1rem;
+    @media (min-width: 768px) {
+      margin-left: 1.5rem;
+    }
+  }
+
+  &__nav-bar {
+    margin: 0 1rem;
+    @media (min-width: 768px) {
+      margin: 0 1.5rem;
+    }
+    @media (min-width: 1120px) {
+      margin: 0 2rem;
+    }
+  }
+
+  &__header-img-container {
+    content: url(/src/images/icons/highlight.svg);
+  }
+}
