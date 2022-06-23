@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.body-content {
+   font-family: "TT Lakes", sans-serif;
+}
+
+.button {
+   border: unset;
+   font-size: inherit;
+   font-family: inherit;
+   background-color: unset;
+   border: none;
+   padding: 0;
+   cursor: pointer;
+}
+
+.body-content__repair-brands {
+   margin-left: 16px;
+}
+
+.repair-brands {
+   max-width: 1120px;
+}
+
+@media (min-width: 768px) {
+   .body-content__repair-brands {
+      margin-left: 24px;
+   }
+}
+
+@media (min-width: 1120px) {
+   .body-content__repair-brands {
+      margin-left: 32px;
+   }
+}
+
+@media (min-width: 1220px) {
+   .body-content__repair-brands {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+.repair-brands__heading {
+   font-size: 1rem;
+   font-weight: 300;
+   color: #7e7e82;
+   text-transform: uppercase;
+   margin-bottom: 2rem;
+   margin-top: 1rem;
+}
+
+/* brands list */
+
+.repair-brands__list {
+   display: flex;
+}
+
+
+@media (max-width: 767px) and (max-resolution: 149dpi) {
+   .repair-brands__list {
+      overflow: scroll;
+   }
+}
+
+.repair-brands__list-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 16px;
+   height: 72px;
+   width: 240px;
+   border: 1px solid #eaeaea;
+   border-radius: 6px;
+}
+
+.repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
+   margin-right: 16px;
+}
+
+.repair-brands__list-item--hidden {
+   display: none;
+}
+
+
+
+@media (min-width: 768px) {
+   .repair-brands__list {
+      flex-wrap: wrap;
+      gap: 16px;
+      column-gap: 24px;
+   }
+
+   .repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
+      margin-right: 0;
+   }
+
+   .repair-brands__list-item {
+      width: 224px;
+      margin-right: 0;
+   }
+   .repair-brands__list-item--hidden {
+      display: flex;
+   }
+
+   .repair-brands__list--closed {
+      height: 160px;
+   }
+
+   .repair-brands__list--opened {
+      height: 100%;
+   }
+}
+
+@media (min-width: 1120px) {
+   .repair-brands__list {
+      column-gap: 32px;
+   }
+
+   .repair-brands__list-item {
+      width: 240px;
+   }
+}
+/* swipper rules */
+
+.swiper-pagination {
+   position: static;
+   margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+   width: 12px;
+   height: 12px;
+   background-color: #b6a8a8;
+   margin-right: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: #b5b6bc;
+}
+
+/* go-button */
+
+.go-button {
+   transition: 0.3s ease;
+}
+
+.go-button:hover {
+   transform: scale(1.2);
+}
+
+.go-button__img-container {
+   content: url(../images/icons/go.svg);
+}
+
+/* show btn */
+
+.repair-brands__showbtn--hidden {
+   display: none;
+}
+
+.repair-brands__showbtn:hover {
+   color: #41F6D7;
+}
+
+.repair-brands__showbtn-img-container {
+   content: url(../images/icons/icon.svg);
+}
+
+.repair-brands__showbtn-text {
+   margin-left: 16px;
+}
+
+
+@media (min-width: 768px) {
+   .repair-brands__showbtn--hidden {
+      display: block;
+   }
+}
