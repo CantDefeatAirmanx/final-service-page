@@ -1,0 +1,19 @@
+{
+  "name": "final-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CantDefeatAirmanx/final-service-page.git"
+  },
+  "author": "Kuznetsov Yegor <kuznetsovyegor25@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CantDefeatAirmanx/final-service-page/issues"
+  },
+  "homepage": "https://github.com/CantDefeatAirmanx/final-service-page#readme"
+}
