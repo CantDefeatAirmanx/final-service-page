@@ -8,6 +8,7 @@
 @import "./blocks/page-content/main-header/page-info/page-info.scss";
 @import "./blocks/page-content/main-header/page-info/high-res-header/high-res-header.scss";
 @import "./blocks/page-content/main-header/page-info/nav-bar/nav-bar.scss";
+@import "./blocks/page-content/main-content/description/description.scss";
 
 
 //buttons
@@ -32,107 +33,4 @@
 .button {
    background-color: inherit;
    border: none;
-}
-
-
-/* Info-section header */
-
-/* description */
-
-.description {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-.description__flex-container {
-   flex-grow: 1;
-}
-
-.description__text {
-   font-size: 0.9rem;
-   margin-right: 1rem;
-   margin-top: 1.5rem;
-   margin-left: 1rem;
-}
-
-.description__text--flex {
-   display: flex;
-   font-size: 1rem;
-   font-weight: 500;
-   margin-bottom: 1rem;
-}
-
-.description__text--flex .link {
-   margin-left: 1rem;
-}
-
-// .description__text--flex .img-container {
-//    content: url(images/icons/icon.svg);
-// }
-
-.description__text--flex:hover {
-   color: #41f6d7;
-}
-
-.description__flex-container.description__img {
-   min-width: 320px;
-   max-width: 530px;
-}
-
-.description__img img {
-   width: 100%;
-}
-
-.description__text--hidden {
-   display: none;
-}
-
-@media (min-width: 768px) {
-   /* page-info description */
-
-   .description {
-      flex-wrap: wrap;
-      margin: 0 1.5rem;
-      margin-top: 1rem;
-   }
-
-   .description__flex-container {
-      flex-grow: 1;
-      max-width: 50%;
-   }
-
-   .description__text {
-      margin-left: 0;
-      margin-top: 0.5rem;
-   }
-
-   .description__text--hidden {
-      display: block;
-   }
-
-   .description__text--768hidden {
-      display: none;
-   }
-}
-
-@media (min-width: 1120px) {
-   /* page-info description */
-   .description {
-      flex-wrap: nowrap;
-      margin: 0 2rem;
-   }
-
-   .description__flex-container {
-      flex-grow: 1;
-      max-width: 50%;
-   }
-
-   .description__text--hidden {
-      display: block;
-   }
-
-   .description__text--768hidden {
-      display: inline;
-   }
 }
