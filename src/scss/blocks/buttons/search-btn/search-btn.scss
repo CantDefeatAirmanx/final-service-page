@@ -1,0 +1,13 @@
+.search-btn {
+   transition: 0.3s ease;
+ 
+   &:hover {
+     cursor: pointer;
+     transform: scale(1.2);
+   }
+ 
+   &__container {
+     content: url(/src/images/icons/search.svg);
+   }
+ }
+ 

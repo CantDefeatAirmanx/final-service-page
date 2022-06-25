@@ -1,0 +1,29 @@
+.side-bar-menu {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 1rem 0;
+   margin: 0;
+
+   & .company-logo {
+      margin-right: auto;
+   }
+
+   // .side-bar-menu__element
+
+   &__element {
+      margin: 0 0.6rem;
+   }
+
+   &__element:first-of-type {
+      margin-left: 1rem;
+      @media (min-width: 360px) {margin-left: 1.5rem}
+   }
+
+   &__element:last-of-type {
+      margin-right: 1rem;
+      @media (min-width: 360px) {margin-right: 1.5rem}
+   }
+}

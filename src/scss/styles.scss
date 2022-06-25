@@ -10,6 +10,10 @@
 @import "./blocks/page-content/main-header/page-info/nav-bar/nav-bar.scss";
 @import "./blocks/page-content/main-content/description/description.scss";
 
+//side-bar
+@import "./blocks/side-bar/side-bar.scss";
+@import "./blocks/side-bar/side-bar-menu/side-bar-menu.scss";
+@import "./blocks/side-bar/mobile-footer/mobile-footer.scss";
 
 //buttons
 @import "./blocks/buttons/call-btn/call-btn.scss";
@@ -18,11 +22,16 @@
 @import "./blocks/buttons/hamburger-btn/hamburger-btn.scss";
 @import "./blocks/buttons/profile-btn/profile-btn.scss";
 @import "./blocks/buttons/repair-order-btn/repair-order-btn.scss";
+@import "./blocks/buttons/search-btn/search-btn.scss";
+@import "./blocks/buttons/close-menu-btn/close-menu-btn.scss";
 
-
+//swiper
+@import "/node_modules/swiper/swiper.min.css";
 
 .body-content {
    margin: 0;
+   
+   @media (min-width: 1440px) {display: flex;}
 }
 
 .link {
@@ -33,4 +42,5 @@
 .button {
    background-color: inherit;
    border: none;
+   padding: 0;
 }

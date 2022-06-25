@@ -11,7 +11,7 @@
    cursor: pointer;
 }
 
-.burger-menu {
+.side-bar {
    font-family: "TT Lakes", sans-serif;
    width: 320px;
    height: 676px;
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-   .burger-menu {height: 900px}
+   .side-bar {height: 900px}
 }
 
 .link {
@@ -85,23 +85,23 @@
 
 /* burger menu nav-bar */
 
-.burger-menu__nav-bar {
+.side-bar__nav-bar {
    margin-top: 0px;
    margin-bottom: auto;
 }
 
 @media (min-width: 768px) {
-   .burger-menu__nav-bar {margin-top: 24px}
+   .side-bar__nav-bar {margin-top: 24px}
 }
 
-.burger-menu__nav-list {
+.side-bar__nav-list {
    list-style: none;
    margin: 0;
    padding: 0;
    position: relative;
 }
 
-.burger-menu__nav-link {
+.side-bar__nav-link {
    margin: 0;
    padding: 0;
    height: 36px;
@@ -110,25 +110,25 @@
 }
 
 @media (min-width: 360px) {
-   .burger-menu__nav-link {padding: 4px 1.5rem;}
+   .side-bar__nav-link {padding: 4px 1.5rem;}
 }
 
 @media (min-width: 768px) {
-   .burger-menu__nav-link {padding: 8px 1.5rem;}
+   .side-bar__nav-link {padding: 8px 1.5rem;}
 }
 
 
 
-.burger-menu__nav-link {
+.side-bar__nav-link {
    position: relative;
 }
 
-.burger-menu__nav-link--active a {
+.side-bar__nav-link--active a {
    pointer-events: none;
    color: #7e7e82;
 }
 
-.burger-menu__nav-link--active::before {
+.side-bar__nav-link--active::before {
    content: url(../images/icons/highlight.svg);
    position: absolute;
    left: 0;
@@ -136,13 +136,13 @@
    top: 0;
 }
 
-.burger-menu__nav-link:hover:not(.burger-menu__nav-link--active) {
+.side-bar__nav-link:hover:not(.side-bar__nav-link--active) {
    color: #41f6d7;
    font-size: 1.15rem;
    text-decoration: underline;
 }
 
-.burger-menu__nav-link:hover:not(.burger-menu__nav-link--active)::before {
+.side-bar__nav-link:hover:not(.side-bar__nav-link--active)::before {
    content: url(../images/icons/highlight.svg);
    position: absolute;
    left: 0;
@@ -151,15 +151,15 @@
 }
 
 
-/* burger-menu__footer */
+/* side-bar__footer */
 
-.burger-menu__footer {
+.side-bar__footer {
    margin-left: 1rem;
    margin-bottom: 2rem;
 }
 
 @media (min-width: 360px) {
-   .burger-menu__footer {margin-left: 1.5rem}
+   .side-bar__footer {margin-left: 1.5rem}
 }
 
 /* mobile-footer__btns-container */
