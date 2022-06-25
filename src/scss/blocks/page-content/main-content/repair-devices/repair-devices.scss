@@ -1,8 +1,7 @@
-.repair-brands {
-  
+.repair-devices {
+
   border-top: 1px solid #D9FFF5;
-  
-  // .repair-brands__heading
+  // .repair-devices__heading
 
   &__heading {
     font-size: 1rem;
@@ -13,12 +12,7 @@
     margin-top: 1rem;
   }
 
-  // .repair-brands__swiper-container
-
-  &__swiper-container {
-  }
-
-  // .repair-brands__list
+  // .repair-devices__list
 
   &__list {
     padding: 0;
@@ -34,11 +28,11 @@
     }
   }
 
-  // .repair-brands__list--closed
+  // .repair-devices__list--closed
 
   &__list--closed {
     @media (min-width: 768px) {
-      height: 155px;
+      height: 150px;
     }
   }
 
@@ -47,18 +41,18 @@
       height: 100%;
     }
   }
-
-  // .repair-brands__list-item
+  // .repair-devices__list-item
 
   &__list-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    height: 72px;
+    height: 160px;
     width: 240px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
+
     @media (min-width: 768px) {
       width: 224px;
       margin-right: 0;
@@ -68,7 +62,15 @@
       width: 240px;
     }
 
-    &:not(.repair-brands__list-item:last-of-type) {
+    & div {
+      align-self: flex-start;
+    }
+
+    & button {
+      align-self: flex-end;
+    }
+
+    &:not(.repair-devices-item:last-of-type) {
       margin-right: 16px;
       @media (min-width: 768px) {
         margin-right: 0;
@@ -76,16 +78,7 @@
     }
   }
 
-  // .repair-brands__list-item--hidden
-
-  &__list-item--hidden {
-    display: none;
-    @media (min-width: 768px) {
-      display: flex;
-    }
-  }
-
-  // .repair-brands__showbtn
+  // .repair-devices__showbtn
 
   &__showbtn {
     font-size: inherit;
@@ -105,11 +98,12 @@
     content: url(../images/icons/icon.svg);
   }
 
-  &__showbtn-img-container--flipped {
+  &__showbtn-img-container-flipped {
     transform: rotate(180deg);
   }
 
   &__showbtn-text {
     margin-left: 16px;
   }
+  
 }

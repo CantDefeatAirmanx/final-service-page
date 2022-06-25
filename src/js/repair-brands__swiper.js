@@ -32,4 +32,17 @@ if (isMobileDevice || iPhoneFallback || useragentFallback()) {
 
     slidesPerView: 'auto'
   })
+
+  new Swiper('.repair-devices__swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+
+    slideToClickedSlide: true,
+
+    autoWidth: true,
+
+    slidesPerView: 'auto'
+  })
 }
