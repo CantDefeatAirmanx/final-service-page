@@ -1,0 +1,21 @@
+.swiper {
+  &-pagination {
+    display: flex;
+    position: static;
+    top: 0px;
+    margin-top: 20px;
+    justify-content: center;
+
+    &-bullet {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      margin: 0 6px;
+      background-color: #ccb8b8;
+
+      &-active {
+        background: #b5b6bc;
+      }
+    }
+  }
+}

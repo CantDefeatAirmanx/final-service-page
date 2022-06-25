@@ -13,7 +13,8 @@
   &__flex-container--hidden {
     display: none;
     @media (min-width: 1120px) {
-      display: block;
+      display: flex;
+      align-items: center;
     }
   }
 

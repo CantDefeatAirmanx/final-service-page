@@ -3,7 +3,6 @@
   font-family: 'TT Lakes', sans-serif;
   width: 320px;
   height: 676px;
-  margin-right: auto;
   box-sizing: border-box;
   box-shadow: 10px 0 20px -10px #0e185030;
   flex-direction: column;
@@ -39,6 +38,7 @@
   // .side-bar__nav-link
 
   &__nav-link {
+    box-sizing: content-box;
     position: relative;
     margin: 0;
     padding: 0;

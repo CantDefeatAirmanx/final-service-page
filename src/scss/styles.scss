@@ -1,46 +1,59 @@
 //font-face
-@import "font-style.scss";
-
-//page content
-@import "./blocks/page-content/page-content.scss";
-@import "./blocks/page-content/main-header/mobile-menu/mobile-menu.scss";
-@import "./blocks/page-content/main-header/page-info/page-info.scss";
-@import "./blocks/page-content/main-header/page-info/page-info.scss";
-@import "./blocks/page-content/main-header/page-info/high-res-header/high-res-header.scss";
-@import "./blocks/page-content/main-header/page-info/nav-bar/nav-bar.scss";
-@import "./blocks/page-content/main-content/description/description.scss";
-
-//side-bar
-@import "./blocks/side-bar/side-bar.scss";
-@import "./blocks/side-bar/side-bar-menu/side-bar-menu.scss";
-@import "./blocks/side-bar/mobile-footer/mobile-footer.scss";
-
-//buttons
-@import "./blocks/buttons/call-btn/call-btn.scss";
-@import "./blocks/buttons/chat-btn/chat-btn.scss";
-@import "./blocks/buttons/check-status-btn/check-status-btn.scss";
-@import "./blocks/buttons/hamburger-btn/hamburger-btn.scss";
-@import "./blocks/buttons/profile-btn/profile-btn.scss";
-@import "./blocks/buttons/repair-order-btn/repair-order-btn.scss";
-@import "./blocks/buttons/search-btn/search-btn.scss";
-@import "./blocks/buttons/close-menu-btn/close-menu-btn.scss";
+@import 'font-style.scss';
 
 //swiper
-@import "/node_modules/swiper/swiper.min.css";
+@import '../../node_modules/swiper/swiper.min.css';
+
+//page content
+@import './blocks/page-content/page-content.scss';
+@import './blocks/page-content/main-header/mobile-menu/mobile-menu.scss';
+@import './blocks/page-content/main-header/page-info/page-info.scss';
+@import './blocks/page-content/main-header/page-info/page-info.scss';
+@import './blocks/page-content/main-header/page-info/high-res-header/high-res-header.scss';
+@import './blocks/page-content/main-header/page-info/nav-bar/nav-bar.scss';
+@import './blocks/page-content/main-content/main-content.scss';
+@import './blocks/page-content/main-content/description/description.scss';
+@import './blocks/page-content/main-content/repair-brands/repair-brands.scss';
+@import './blocks/page-content/main-content/repair-brands/repair-brands__swiper.scss';
+
+//side-bar
+@import './blocks/side-bar/side-bar.scss';
+@import './blocks/side-bar/side-bar-menu/side-bar-menu.scss';
+@import './blocks/side-bar/mobile-footer/mobile-footer.scss';
+
+//buttons
+@import './blocks/buttons/call-btn/call-btn.scss';
+@import './blocks/buttons/chat-btn/chat-btn.scss';
+@import './blocks/buttons/check-status-btn/check-status-btn.scss';
+@import './blocks/buttons/hamburger-btn/hamburger-btn.scss';
+@import './blocks/buttons/profile-btn/profile-btn.scss';
+@import './blocks/buttons/repair-order-btn/repair-order-btn.scss';
+@import './blocks/buttons/search-btn/search-btn.scss';
+@import './blocks/buttons/close-menu-btn/close-menu-btn.scss';
+@import './blocks/buttons/go-button/go-button.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .body-content {
-   margin: 0;
-   
-   @media (min-width: 1440px) {display: flex;}
+  margin: 0;
+  @media (min-width: 1440px) {
+    display: flex;
+  }
 }
 
 .link {
-   text-decoration: none;
-   color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .button {
-   background-color: inherit;
-   border: none;
-   padding: 0;
+  background-color: inherit;
+  border: none;
+  padding: 0;
 }

@@ -1,0 +1,140 @@
+.repair-brands {
+  // .repair-brands__heading
+
+  &__heading {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #7e7e82;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  // .repair-brands__swiper-container
+
+  &__swiper-container {
+  }
+
+  // .repair-brands__list
+
+  &__list {
+    padding: 0;
+    //  @media (max-width: 767px) and (max-resolution: 149dpi) {overflow: scroll;}
+    @media (min-width: 768px) {
+      flex-wrap: wrap;
+      gap: 16px;
+      column-gap: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      column-gap: 32px;
+    }
+  }
+
+  // .repair-brands__list--closed
+
+  &__list--closed {
+    @media (min-width: 768px) {
+      height: 155px;
+    }
+  }
+
+  &__list--opened {
+    @media (min-width: 768px) {
+      height: 100%;
+    }
+  }
+
+  // .repair-brands__list-item
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 72px;
+    width: 240px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    @media (min-width: 768px) {
+      width: 224px;
+      margin-right: 0;
+    }
+
+    @media (min-width: 1120px) {
+      width: 240px;
+    }
+  }
+
+  &__list-item:not(.repair-brands__list-item:last-of-type) {
+    margin-right: 16px;
+    @media (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
+
+  // .repair-brands__list-item--hidden
+
+  &__list-item--hidden {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  // .repair-brands__showbtn
+
+  &__showbtn {
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  &__showbtn:hover {
+    color: #41F6D7;
+  }
+
+  &__showbtn--hidden {
+    display: none;
+    @media (min-width: 768px) {display: block;}
+  }
+
+  &__showbtn-img-container {
+    content: url(../images/icons/icon.svg);
+  }
+
+  &__showbtn-text {
+    margin-left: 16px;
+  }
+}
+
+.go-button {
+  transition: 0.3s ease;
+}
+
+.go-button:hover {
+  transform: scale(1.2);
+}
+
+.go-button__img-container {
+  content: url(../images/icons/go.svg);
+}
+
+
+// .swiper {
+//   &-pagination {
+//     display: flex; //изменяем тип отображения на flex-контейнер
+//     justify-content: center; //центрируем bullets по горизонтали
+
+//     &-bullet {
+//       height: 12px; // устанавливаем высоту bullets на 12 px
+//       width: 12px;  // устанавливаем ширину bullets на 12 px
+//       background: #DDD;  // устанавливаем цвет неактивных bullets
+//       border-radius: 50%;  // делаем их круглыми
+//       margin: 0 6px;  // устанавливаем отступ по горизонтали в 6px
+
+//       &-active {
+//         background: #B5B6BC; //устанавливем цвет для активных bullets
+//       }
+//     }
+//   }
+// }
