@@ -25,7 +25,8 @@
   }
 
   &__card:last-of-type {
-    margin-right: 15rem;
+    margin-right: 2.5rem;
+    @media (min-width: 360px) {margin-right: 5rem}
   }
 
   // .mobile-price-interface__title

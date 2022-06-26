@@ -1,0 +1,70 @@
+.price-table {
+
+  font-size: 0.875rem;
+  // .price-table__table-heading
+
+  &__table-heading {
+    display: flex;
+    color: #7E7E82;
+    margin-bottom: 16px;
+    margin-right: 1.5rem;
+  }
+
+  &__service-name-heading {
+    margin-left: 16px;
+    width: 50%;
+  }
+
+  &__price-heading {
+    width: 15%;
+  }
+
+  &__time-heading {
+    width: 15%;
+  }
+
+  // .price-table__services-wrapper
+
+  &__services-wrapper {
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin-right: 1.5rem;
+  }
+
+  // .price-table__service-item
+
+  &__service-item {
+    height: 64px;
+    display: flex;
+    align-items: center;
+
+    &:not(.price-table__service-item:last-of-type) {
+      border-bottom: 1px solid #EAEAEA;
+    }
+  }
+
+  
+
+  // .price-table__service-name
+
+  &__service-name {
+    width: 50%;
+    margin-left: 16px;
+  }
+
+  // .price-table__price
+
+  &__price {
+    width: 15%;
+  }
+
+  // .price-table__time
+
+  // &__time {
+  // }
+
+  &__order-btn {
+    margin-left: auto;
+    margin-right: 16px;
+  }
+}
