@@ -1,0 +1,21 @@
+.service-prices {
+
+  border-top: 1px solid #D9FFF5;
+  margin-bottom: 50px;
+  // .service-prices__heading
+
+  &__heading {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #7e7e82;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  // .service-prices__mobile-price-interface
+
+  &__mobile-price-interface {
+    @media (min-width: 768px) {display: none;}
+  }
+}

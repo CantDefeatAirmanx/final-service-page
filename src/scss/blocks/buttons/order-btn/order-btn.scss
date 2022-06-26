@@ -1,0 +1,25 @@
+.order-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  width: 120px;
+  height: 32px;
+  background-color: #FF3E79 !important;
+  border-radius: 10px;
+  // .order-btn__text
+
+  &__text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  // .order-btn__image-container
+
+  &__image-container {
+    content: url('/src/images/icons/dropdown.svg');
+    margin-right: 5px;
+  }
+}

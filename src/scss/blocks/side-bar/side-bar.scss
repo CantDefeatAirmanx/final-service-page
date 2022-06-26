@@ -1,18 +1,36 @@
 .side-bar {
-  display: none;
+  display: flex;
+  position: absolute;
   font-family: 'TT Lakes', sans-serif;
   width: 320px;
   height: 676px;
   box-sizing: border-box;
   box-shadow: 10px 0 20px -10px #0e185030;
+  background-color: white;
   flex-direction: column;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+
+  &--opened {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    transform: translateX(0%);
+  }
+
+  @media (min-width: 360px) {
+    width: 360px;
+  }
 
   @media (min-width: 768px) {
     height: 900px;
+    width: 320px;
   }
 
   @media (min-width: 1440px) {
-    display: flex;
+    transform: translateX(0%);
+    position: static;
     box-shadow: none;
   }
 

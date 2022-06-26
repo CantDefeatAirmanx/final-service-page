@@ -13,11 +13,6 @@
     margin-top: 1rem;
   }
 
-  // .repair-brands__swiper-container
-
-  &__swiper-container {
-  }
-
   // .repair-brands__list
 
   &__list {
@@ -59,6 +54,7 @@
     width: 240px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
+    background-color: #ffffff;
     @media (min-width: 768px) {
       width: 224px;
       margin-right: 0;

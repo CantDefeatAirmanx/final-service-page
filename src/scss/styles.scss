@@ -16,6 +16,8 @@
 @import './blocks/page-content/main-content/repair-brands/repair-brands.scss';
 @import './blocks/page-content/main-content/repair-brands/repair-brands__swiper.scss';
 @import './blocks/page-content/main-content/repair-devices/repair-devices.scss';
+@import "./blocks/page-content/main-content/service-prices/service-prices.scss";
+@import "./blocks/page-content/main-content/service-prices/mobile-price-interface/mobile-price-interface.scss";
 
 //side-bar
 @import './blocks/side-bar/side-bar.scss';
@@ -32,6 +34,7 @@
 @import './blocks/buttons/search-btn/search-btn.scss';
 @import './blocks/buttons/close-menu-btn/close-menu-btn.scss';
 @import './blocks/buttons/go-button/go-button.scss';
+@import './blocks/buttons/order-btn/order-btn.scss';
 
 *,
 *::after,

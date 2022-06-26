@@ -1,0 +1,45 @@
+.mobile-price-interface {
+
+  overflow: hidden;
+  // .mobile-price-interface__list
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  // .mobile-price-interface__card
+
+  &__card {
+    position: relative;
+    font-size: 0.875rem;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    margin-right: 16px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+  }
+
+  &__card:last-of-type {
+    margin-right: 15rem;
+  }
+
+  // .mobile-price-interface__title
+
+  &__title {
+    color: #7e7e82;
+  }
+
+  // .mobile-price-interface__order-btn
+
+  &__order-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+   
+  }
+}
