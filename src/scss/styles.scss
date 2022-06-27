@@ -48,9 +48,6 @@
 
 .body-content {
   margin: 0;
-  @media (min-width: 1440px) {
-    display: flex;
-  }
 }
 
 .link {
@@ -61,12 +58,21 @@
 }
 
 .button {
-  background-color: inherit;
+  background: none;
   border: none;
   padding: 0;
   font-size: inherit;
   font-family: inherit;
   cursor: pointer;
+}
+
+.body-content__content-wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+  @media (min-width: 1500px) {
+    justify-content: center;
+  }
 }
 
 ::-webkit-scrollbar {
