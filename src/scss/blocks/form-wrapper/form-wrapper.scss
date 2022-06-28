@@ -1,0 +1,22 @@
+.form-wrapper {
+  position: absolute;
+  right: 0;
+  width: 320px;
+  height: 676px;
+  @media (min-width: 360px) {
+    width: 360px;
+  }
+  @media (min-width: 768px) {
+    width: 440px;
+    height: 940px;
+    box-shadow: -2px 0 3px 0 #d9fff5;
+  }
+  z-index: 10;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+
+  &--opened {
+    transform: translateX(0%);
+  }
+}

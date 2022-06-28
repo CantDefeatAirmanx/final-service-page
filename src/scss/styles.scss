@@ -16,15 +16,19 @@
 @import './blocks/page-content/main-content/repair-brands/repair-brands.scss';
 @import './blocks/page-content/main-content/repair-brands/repair-brands__swiper.scss';
 @import './blocks/page-content/main-content/repair-devices/repair-devices.scss';
-@import "./blocks/page-content/main-content/service-prices/service-prices.scss";
-@import "./blocks/page-content/main-content/service-prices/mobile-price-interface/mobile-price-interface.scss";
-@import "./blocks/page-content/main-content/service-prices/price-table/price-table.scss";
-@import "./blocks/page-content/main-footer/main-footer.scss";
+@import './blocks/page-content/main-content/service-prices/service-prices.scss';
+@import './blocks/page-content/main-content/service-prices/mobile-price-interface/mobile-price-interface.scss';
+@import './blocks/page-content/main-content/service-prices/price-table/price-table.scss';
+@import './blocks/page-content/main-footer/main-footer.scss';
 
 //side-bar
 @import './blocks/side-bar/side-bar.scss';
 @import './blocks/side-bar/side-bar-menu/side-bar-menu.scss';
 @import './blocks/side-bar/mobile-footer/mobile-footer.scss';
+
+//forms
+@import './blocks/form-wrapper/form-wrapper.scss';
+@import './blocks/form/form.scss';
 
 //buttons
 @import './blocks/buttons/call-btn/call-btn.scss';
@@ -48,6 +52,7 @@
 
 .body-content {
   margin: 0;
+  font-family: 'TT Lakes', sans-serif;
 }
 
 .link {
@@ -66,6 +71,28 @@
   cursor: pointer;
 }
 
+.input {
+  // border: none;
+  // margin: 0;
+  // font-size: 16px;
+  // font-family: 'TT Lakes';
+  // -webkit-appearance: none;
+  // -ms-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+  // // background: #f2f2f2;
+  // width: 100%;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+}
+
 .body-content__content-wrapper {
   @media (min-width: 1440px) {
     display: flex;
@@ -76,13 +103,13 @@
 }
 
 ::-webkit-scrollbar {
-   width: 5px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
-   background-color: hsl(0, 0%, 91%);
+  background-color: hsl(0, 0%, 91%);
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color: hsl(310, 5%, 75%);
+  background-color: hsl(310, 5%, 75%);
 }

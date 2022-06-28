@@ -31,7 +31,7 @@
           <li class="side-bar-menu__element">
             <button
               type="button"
-              class="side-bar-menu__button call-btn button"
+              class="side-bar-menu__button search-btn button"
               aria-label="search button"
             >
               <div class="search-btn__container"></div>
@@ -136,6 +136,7 @@
           </ul>
         </footer>
       </aside>
+      <div class="form-wrapper"></div>
       <div class="page-content">
         <header class="main-header">
           <menu class="mobile-menu">
@@ -874,5 +875,66 @@
         </main>
       </div>
     </div>
+    <template id="form-template">
+      <div class="form-container">
+        <button
+          type="button"
+          class="form-container__close-btn close-menu-btn button"
+          aria-label="close menu button"
+        >
+          <div class="close-menu-btn__container"></div>
+        </button>
+        <form action="" class="form-container__form form">
+          <legend class="form__heading"></legend>
+
+          <div class="form__input-container">
+            <input
+              type="text"
+              name="name"
+              class="form__input form__name input"
+              placeholder="Имя"
+            />
+          </div>
+
+          <div class="form__input-container">
+            <input
+              type="tel"
+              name="phone-number"
+              class="form__input form__phone-number input"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="form__input-container">
+            <input
+              type="email"
+              class="form__input form__email input"
+              placeholder="Электронная почта"
+            />
+          </div>
+
+          <div class="form__input-container">
+            <textarea
+              name=""
+              id=""
+              rows="5"
+              class="form__input form__textarea input"
+              placeholder="Сообщение"
+            ></textarea>
+          </div>
+
+          <p class="form__disclaimer">
+            Нажимая "отправить", вы даете согласие на
+            <a href="#" class="form__disclaimer-link link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="form__disclaimer-link link">политикой конфиденциальности</a>
+          </p>
+
+          <button class="form__submit-btn order-btn button" type="button">
+            <div class="order-btn__text">Отправить</div>
+            <div class="order-btn__image-container"></div>
+          </button>
+        </form>
+      </div>
+    </template>
   </body>
 </html>
