@@ -1,46 +1,46 @@
 .main-footer {
-  font-size: 0.875rem;
-  color: #7e7e82;
-  border-top: 1px solid #d9fff5;
+  font-size: $small-text-size;
+  color: $sub-text-color;
+  border-top: 1px solid $section-highlight-border-color;
   display: flex;
   flex-direction: column;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
-    text-align: left; /*  */
+    text-align: left;
   }
 
   // .main-footer__paragraph
 
   &__paragraph {
-    margin-bottom: 16px;
-    margin-left: 16px;
+    margin-bottom: $mobile-side-margin;
+    margin-left: $mobile-side-margin;
     margin-right: 16px;
     flex-basis: 33.3%;
     &:first-child {
       margin-top: 16px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       margin-top: 32px !important;
       &:first-child {
-        margin-left: 24px;
+        margin-left: $tablet-side-margin;
       }
       &:nth-child(2) {
         text-align: center;
       }
       &:last-child {
-        margin-right: 24px;
+        margin-right: $tablet-side-margin;
         text-align: right;
       }
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: $PC-width) {
       &:first-child {
-        margin-left: 32px;
+        margin-left: $pc-side-margin;
       }
       &:last-child {
-        margin-right: 32px;
+        margin-right: $pc-side-margin;
       }
     }
   }
@@ -48,7 +48,7 @@
   &__link {
     transition: all 0.3s ease-in-out;
     &:hover {
-      color: #ff3e79;
+      color: $second-hover-color;
     }
   }
 }

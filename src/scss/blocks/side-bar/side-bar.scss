@@ -1,12 +1,12 @@
 .side-bar {
   display: flex;
   position: absolute;
-  font-family: 'TT Lakes', sans-serif;
-  width: 320px;
+  font-family: $font-family;
+  width: $mobile-first-width;
   height: 676px;
   box-sizing: border-box;
   box-shadow: 10px 0 20px -10px #0e185030;
-  background-color: white;
+  background-color: $slight-highlight-background-color;
   flex-direction: column;
   transition: transform 0.3s ease;
   transform: translateX(-100%);
@@ -19,16 +19,16 @@
     transform: translateX(0%);
   }
 
-  @media (min-width: 360px) {
-    width: 360px;
+  @media (min-width: $mobile-second-width) {
+    width: $mobile-second-width;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     height: 900px;
-    width: 320px;
+    width: $mobile-first-width;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $PC-width) {
     transform: translateX(0%);
     position: static;
     box-shadow: none;
@@ -39,7 +39,7 @@
   &__nav-bar {
     margin-top: 0px;
     margin-bottom: auto;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       margin-top: 24px;
     }
   }
@@ -63,41 +63,39 @@
     height: 36px;
     padding: 4px 1rem;
     transition: font-size 0.3s;
-    @media (min-width: 360px) {
+    @media (min-width: $mobile-second-width) {
       padding: 4px 1.5rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       padding: 8px 1.5rem;
     }
-  }
 
-  &__nav-link:hover:not(.side-bar__nav-link--active) {
-    color: #41f6d7;
-    font-size: 1.15rem;
-    text-decoration: underline;
-  }
+    &:hover:not(.side-bar__nav-link--active) {
+      color: $first-hover-color;
+      font-size: 1.15rem;
+      text-decoration: underline;
+    }
 
-  &__nav-link:hover:not(.side-bar__nav-link--active)::before {
-    content: url(../images/icons/highlight.svg);
-    position: absolute;
-    left: 0;
-    height: 32px;
-    top: 0;
-  }
+    &:hover:not(.side-bar__nav-link--active)::before {
+      content: url(../images/icons/highlight.svg);
+      position: absolute;
+      left: 0;
+      height: 32px;
+      top: 0;
+    }
 
-  // .side-bar__nav-link--active
+    &--active {
+      pointer-events: none;
+      color: $sub-text-color;
 
-  &__nav-link--active {
-    pointer-events: none;
-    color: #7e7e82;
-  }
-
-  &__nav-link--active::before {
-    content: url(../images/icons/highlight.svg);
-    position: absolute;
-    left: 0;
-    height: 32px;
-    top: 0;
+      &::before {
+        content: url(../images/icons/highlight.svg);
+        position: absolute;
+        left: 0;
+        height: 32px;
+        top: 0;
+      }
+    }
   }
 
   // .side-bar__footer

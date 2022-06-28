@@ -1,12 +1,33 @@
-
-//break-points 
+//break-points
 $mobile-first-width: 320px;
 $mobile-second-width: 360px;
 $tablet-width: 768px;
 $tablet-to-PC-width: 1120px;
 $PC-width: 1440px;
-$center-page-width: 1500px; 
+$center-page-width: 1500px;
 
-//font 
-
+//font
 $font-family: 'TT Lakes', sans-serif;
+$main-heading-size: 1.75rem;
+$sub-heading1-size: 1.5rem;
+$sub-heading2-size: 1rem;
+$normal-text-size: 1rem;
+$small-text-size: 0.875rem;
+
+//colors
+$page-background-color: #f8f8f8;
+$slight-highlight-background-color: #ffffff;
+$slightly-highlighted-items-border-color: #eaeaea;
+$section-highlight-border-color: #d9fff5;
+$textColor: #1b1c21;
+$sub-text-color: #7e7e82;
+$first-hover-color: #41f6d7;
+$navlink-hover-color: #b8ffec;
+$second-hover-color: #ff3e79;
+$swiper-bullet-color: #dddddd;
+$swiper-active-bullet-color: #b5b6bc;
+
+//indents
+$mobile-side-margin: 16px;
+$tablet-side-margin: 24px;
+$pc-side-margin: 32px;

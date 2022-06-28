@@ -1,11 +1,10 @@
 .price-table {
-
-  font-size: 0.875rem;
+  font-size: $small-text-size;
   // .price-table__table-heading
 
   &__table-heading {
     display: flex;
-    color: #7E7E82;
+    color: $sub-text-color;
     margin-bottom: 16px;
     margin-right: 1.5rem;
   }
@@ -26,7 +25,7 @@
   // .price-table__services-wrapper
 
   &__services-wrapper {
-    background-color: #ffffff;
+    background-color: $slight-highlight-background-color;
     border-radius: 6px;
     margin-right: 1.5rem;
   }
@@ -39,11 +38,9 @@
     align-items: center;
 
     &:not(.price-table__service-item:last-of-type) {
-      border-bottom: 1px solid #EAEAEA;
+      border-bottom: 1px solid $slightly-highlighted-items-border-color;
     }
   }
-
-  
 
   // .price-table__service-name
 
@@ -57,11 +54,6 @@
   &__price {
     width: 15%;
   }
-
-  // .price-table__time
-
-  // &__time {
-  // }
 
   &__order-btn {
     margin-left: auto;

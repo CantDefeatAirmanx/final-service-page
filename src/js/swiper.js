@@ -20,42 +20,24 @@ let useragentFallback = function () {
 }
 
 if (isMobileDevice || iPhoneFallback || useragentFallback()) {
-  new Swiper('.repair-brands__swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
+  let swiperContainers = [
+    '.repair-brands__swiper-container',
+    '.repair-devices__swiper-container',
+    '.service-prices__swiper-container'
+  ]
 
-    slideToClickedSlide: true,
+  for (let i = 0; i < swiperContainers.length; i++) {
+    new Swiper(swiperContainers[i], {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
 
-    autoWidth: true,
+      slideToClickedSlide: true,
 
-    slidesPerView: 'auto'
-  })
+      autoWidth: true,
 
-  new Swiper('.repair-devices__swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-
-    slideToClickedSlide: true,
-
-    autoWidth: true,
-
-    slidesPerView: 'auto'
-  })
-
-  new Swiper('.service-prices__swiper-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-
-    slideToClickedSlide: true,
-
-    autoWidth: true,
-
-    slidesPerView: 'auto'
-  })
+      slidesPerView: 'auto'
+    })
+  }
 }

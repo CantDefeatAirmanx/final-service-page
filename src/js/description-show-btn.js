@@ -19,6 +19,7 @@
       showBtnImgContainer.classList.add(
         'description__showbtn-img-container--flipped'
       )
+      showBtn.querySelector('.description__showbtn-text').textContent = 'Скрыть'
     } else {
       for (let i = 0; i < textItems.length; i++) {
         textItems[i].removeAttribute('style')
@@ -28,6 +29,8 @@
       showBtnImgContainer.classList.remove(
         'description__showbtn-img-container--flipped'
       )
+      showBtn.querySelector('.description__showbtn-text').textContent =
+        'Читать далее'
     }
   }
 

@@ -2,18 +2,18 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 320px;
+  width: $mobile-first-width;
   height: 676px;
-  @media (min-width: 360px) {
-    width: 360px;
+  @media (min-width: $mobile-second-width) {
+    width: $mobile-second-width;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 440px;
     height: 940px;
-    box-shadow: -2px 0 3px 0 #d9fff5;
+    box-shadow: -2px 0 3px 0 $section-highlight-border-color;
   }
   z-index: 10;
-  background-color: #ffffff;
+  background-color: $slight-highlight-background-color;
   transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
 

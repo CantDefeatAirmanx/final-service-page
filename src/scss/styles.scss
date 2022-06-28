@@ -3,13 +3,14 @@
 
 //variables
 
-@import "./variables.scss";
+@import './variables.scss';
 
 //swiper
 @import '../../node_modules/swiper/swiper.min.css';
+@import './blocks/page-content/main-content/swiper.scss';
 
 //page content
-@import "./blocks/body-content.scss";
+@import './blocks/body-content.scss';
 @import './blocks/page-content/page-content.scss';
 @import './blocks/page-content/main-header/mobile-menu/mobile-menu.scss';
 @import './blocks/page-content/main-header/page-info/page-info.scss';
@@ -19,7 +20,6 @@
 @import './blocks/page-content/main-content/main-content.scss';
 @import './blocks/page-content/main-content/description/description.scss';
 @import './blocks/page-content/main-content/repair-brands/repair-brands.scss';
-@import './blocks/page-content/main-content/repair-brands/repair-brands__swiper.scss';
 @import './blocks/page-content/main-content/repair-devices/repair-devices.scss';
 @import './blocks/page-content/main-content/service-prices/service-prices.scss';
 @import './blocks/page-content/main-content/service-prices/mobile-price-interface/mobile-price-interface.scss';
@@ -30,6 +30,7 @@
 @import './blocks/side-bar/side-bar.scss';
 @import './blocks/side-bar/side-bar-menu/side-bar-menu.scss';
 @import './blocks/side-bar/mobile-footer/mobile-footer.scss';
+@import './blocks/side-bar/mobile-footer/lang-switch/lang-switch.scss';
 
 //forms
 @import './blocks/form-wrapper/form-wrapper.scss';
@@ -46,4 +47,3 @@
 @import './blocks/buttons/close-menu-btn/close-menu-btn.scss';
 @import './blocks/buttons/go-button/go-button.scss';
 @import './blocks/buttons/order-btn/order-btn.scss';
-

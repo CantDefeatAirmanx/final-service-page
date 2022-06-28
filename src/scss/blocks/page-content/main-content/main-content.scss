@@ -1,8 +1,8 @@
 .main-content {
    &__repair-brands, &__repair-devices, &__service-prices {
       margin-top: 32px;
-      margin-left: 16px;
-      @media (min-width: 768px) {margin-left: 24px;}
-      @media (min-width: 1440px) {margin-left: 32px;}
+      margin-left: $mobile-side-margin;
+      @media (min-width: $tablet-width) {margin-left: $tablet-side-margin;}
+      @media (min-width: $PC-width) {margin-left: $pc-side-margin;}
    }
 }

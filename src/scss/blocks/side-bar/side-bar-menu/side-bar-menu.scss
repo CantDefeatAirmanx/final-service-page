@@ -1,36 +1,46 @@
 .side-bar-menu {
-   list-style-type: none;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   width: 100%;
-   padding: 1rem 0;
-   margin: 0;
-   flex-grow: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0;
+  flex-grow: 0;
 
-   & .company-logo {
-      margin-right: auto;
-   }
+  & .company-logo {
+    margin-right: auto;
+  }
 
-   // .side-bar-menu__element
+  // .side-bar-menu__element
 
-   &__element {
-      margin: 0 0.6rem;
-   }
+  &__element {
+    margin: 0 0.6rem;
 
-   &__element:first-of-type {
+    &:first-of-type {
       margin-left: 1rem;
-      @media (min-width: 360px) {margin-left: 1.5rem}
-      @media (min-width: 1440px) {margin-left: 0.5rem}
-   }
+      @media (min-width: $mobile-second-width) {
+        margin-left: 1.5rem;
+      }
+      @media (min-width: $PC-width) {
+        margin-left: 0.5rem;
+      }
+    }
 
-   &__element:last-of-type {
+    &:last-of-type {
       margin-right: 1rem;
-      @media (min-width: 360px) {margin-right: 1.5rem}
-      @media (min-width: 1440px) {margin-right: 1.9rem}
-   }
+      @media (min-width: $mobile-second-width) {
+        margin-right: 1.5rem;
+      }
+      @media (min-width: $PC-width) {
+        margin-right: 1.9rem;
+      }
+    }
+  }
 
-   & .close-menu-btn {
-      @media (min-width: 1440px) {display: none;}
-   }
+  & .close-menu-btn {
+    @media (min-width: $PC-width) {
+      display: none;
+    }
+  }
 }

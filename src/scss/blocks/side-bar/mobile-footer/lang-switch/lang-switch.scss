@@ -1,0 +1,19 @@
+.lang-switch {
+  &__btn-container {
+    margin-right: 0.5rem;
+  }
+
+  &__btn {
+    transition: color 0.3s, transform 150ms;
+
+    &:hover:not(.lang-switch-btn--active) {
+      color: $second-hover-color;
+      transform: scale(1.1);
+    }
+
+    &--active {
+      color: $sub-text-color;
+      pointer-events: none;
+    }
+  }
+}

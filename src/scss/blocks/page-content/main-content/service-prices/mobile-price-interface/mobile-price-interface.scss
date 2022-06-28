@@ -1,5 +1,4 @@
 .mobile-price-interface {
-
   overflow: hidden;
   // .mobile-price-interface__list
 
@@ -12,7 +11,7 @@
 
   &__card {
     position: relative;
-    font-size: 0.875rem;
+    font-size: $small-text-size;
     width: 260px;
     height: 200px;
     display: flex;
@@ -20,19 +19,21 @@
     justify-content: space-between;
     padding: 16px;
     margin-right: 16px;
-    border: 1px solid #eaeaea;
+    border: 1px solid $slightly-highlighted-items-border-color;
     border-radius: 6px;
-  }
 
-  &__card:last-of-type {
-    margin-right: 2.5rem;
-    @media (min-width: 360px) {margin-right: 5rem}
+    &:last-of-type {
+      margin-right: 2.5rem;
+      @media (min-width: $mobile-second-width) {
+        margin-right: 5rem;
+      }
+    }
   }
 
   // .mobile-price-interface__title
 
   &__title {
-    color: #7e7e82;
+    color: $sub-text-color;
   }
 
   // .mobile-price-interface__order-btn
@@ -41,6 +42,5 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
-   
   }
 }

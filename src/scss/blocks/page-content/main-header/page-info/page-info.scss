@@ -5,20 +5,20 @@
   }
 
   &__headline {
-    font-size: 1.75rem;
+    font-size: $main-heading-size;
     margin: 1.5rem 1rem;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       margin-left: 1.5rem;
     }
   }
 
   &__nav-bar {
-    margin: 0 1rem;
-    @media (min-width: 768px) {
-      margin: 0 1.5rem;
+    margin: 0 $mobile-side-margin;
+    @media (min-width: $tablet-width) {
+      margin: 0 $tablet-side-margin;
     }
-    @media (min-width: 1440px) {
-      margin: 0 2rem;
+    @media (min-width: $PC-width) {
+      margin: 0 $pc-side-margin;
     }
   }
 

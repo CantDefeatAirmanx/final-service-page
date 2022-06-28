@@ -4,7 +4,7 @@
   &__close-btn {
     margin-top: 24px;
     margin-left: 16px;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       margin: 0;
       position: absolute;
       left: -56px;
@@ -16,21 +16,21 @@
 .form {
   position: relative;
   margin-top: 40px;
-  margin-left: 16px;
-  margin-right: 16px;
-  @media (min-width: 768px) {
-    margin-left: 24px;
-    margin-right: 24px;
+  margin-left: $mobile-side-margin;
+  margin-right: $mobile-side-margin;
+  @media (min-width: $tablet-width) {
+    margin-left: $tablet-side-margin;
+    margin-right: $tablet-side-margin;
   }
-  @media (min-width: 1440px) {
-    margin-left: 32px;
-    margin-right: 32px;
+  @media (min-width: $PC-width) {
+    margin-left: $pc-side-margin;
+    margin-right: $pc-side-margin;
   }
 
   // .form__heading
 
   &__heading {
-    font-size: 1.5rem;
+    font-size: $sub-heading1-size;
     font-weight: bold;
     margin-bottom: 24px;
   }
@@ -40,10 +40,10 @@
     position: absolute;
     left: -16px;
     top: -6px;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       left: -24px;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: $PC-width) {
       left: -32px;
     }
   }
@@ -54,35 +54,30 @@
     margin: 0;
     margin-bottom: 16px;
     font-size: 16px;
-    font-family: 'TT Lakes';
+    font-family: $font-family;
     padding: 12px 16px;
-    border: 1px solid #eaeaea;
+    border: 1px solid $slightly-highlighted-items-border-color;
     border-radius: 6px;
     width: 100%;
   }
 
   &__textarea {
-    font-size: 16px;
-    font-family: 'TT Lakes';
     min-width: 100%;
     max-width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
     margin-bottom: 16px;
   }
 
   // .form_disclaimer
 
   &__disclaimer {
-    color: #7e7e82;
-    font-size: 0.875rem;
+    color: $sub-text-color;
+    font-size: $small-text-size;
     line-height: inherit;
     margin-bottom: 24px;
   }
 
   &__disclaimer-link {
-    color: #ff3e79 !important;
+    color: $second-hover-color !important;
     &:hover {
       text-decoration: underline;
     }

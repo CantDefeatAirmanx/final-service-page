@@ -5,12 +5,12 @@
   box-sizing: border-box;
   width: 120px;
   height: 32px;
-  background-color: #FF3E79 !important;
+  background-color: $second-hover-color;
   border-radius: 10px;
   transition: all 0.25s ease-in-out;
 
   &:hover {
-    background-color: #c08395 !important;
+    background-color: #c08395;
   }
 
   // .order-btn__text

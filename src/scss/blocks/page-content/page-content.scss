@@ -1,11 +1,9 @@
-$textColor:#1b1c21;
-
 .page-content {
    color: $textColor;
-   font-family: "TT Lakes", sans-serif;
+   font-family: $font-family;
    max-width: 1120px;
    margin: 0 auto;
-   @media (min-width: 1500px) {margin: 0;}
+   @media (min-width: $center-page-width) {margin: 0;}
    box-sizing: border-box;
-   background-color: #F8F8F8;
+   background-color: $page-background-color;
 }
