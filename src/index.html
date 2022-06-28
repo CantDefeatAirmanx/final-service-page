@@ -303,7 +303,7 @@
         </header>
         <main class="main-content">
           <section class="main-content__description description">
-            <div class="description__flex-container">
+            <div class="description__flex-container description__text-container">
               <p class="description__text">
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
@@ -318,10 +318,21 @@
                   очередь, советуют нас родным и близким.</span
                 >
               </p>
-              <div class="description__text description__text--flex">
-                <span class="img-container"></span>
-                <a href="#" class="link">Читать далее</a>
-              </div>
+
+              <p class="description__text zzz description__text--full-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                odio fugit praesentium culpa vel temporibus delectus veritatis
+                quibusdam eos maiores.
+              </p>
+
+              <button
+                type="button"
+                class="description__showbtn button"
+                aria-label="Читать далее"
+              >
+                <span class="description__showbtn-img-container"></span>
+                <span class="description__showbtn-text">Читать далее</span>
+              </button>
             </div>
             <div class="description__flex-container description__img">
               <img
@@ -924,9 +935,13 @@
 
           <p class="form__disclaimer">
             Нажимая "отправить", вы даете согласие на
-            <a href="#" class="form__disclaimer-link link">обработку персональных данных</a> и
-            соглашаетесь с нашей
-            <a href="#" class="form__disclaimer-link link">политикой конфиденциальности</a>
+            <a href="#" class="form__disclaimer-link link"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с нашей
+            <a href="#" class="form__disclaimer-link link"
+              >политикой конфиденциальности</a
+            >
           </p>
 
           <button class="form__submit-btn order-btn button" type="button">

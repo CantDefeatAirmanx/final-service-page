@@ -46,11 +46,13 @@
       formDestination.firstChild.remove()
     }
     // ^^ условие для ситуации последовательных кликов на оба типа кнопок
-    // с незакрывающегося на большом разрешении сайд-бара
+    // с незакрывающегося на большом разрешении сайд-бара, блокировать pointer-events либо
+    // еще что-то выдумывать не стал, поскольку думаю,
+    // что удобно моментально переключиться на другую форму
 
     formDestination.classList.add('form-wrapper--opened')
     pagecontent.setAttribute('style', 'opacity: 0.05;')
-    bodycontent.setAttribute('style', 'max-height: 900px; overflow: hidden;')
+    bodycontent.setAttribute('style', 'max-height: 940px; overflow: hidden;')
   }
 
   function closeForm() {
@@ -62,7 +64,7 @@
     }, 250)
   }
 
-  function someFunction(btnsArray, form) {
+  function formsHandle(btnsArray, form) {
     for (let i = 0; i < btnsArray.length; i++) {
       btnsArray[i].addEventListener('click', function () {
         openForm()
@@ -85,6 +87,6 @@
     }
   }
 
-  someFunction(callBtns, callForm)
-  someFunction(chatBtns, feedBackForm)
+  formsHandle(callBtns, callForm)
+  formsHandle(chatBtns, feedBackForm)
 })()
