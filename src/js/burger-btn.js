@@ -6,8 +6,6 @@
   // const maincontent = document.querySelector('.main-content')
   const pagecontent = document.querySelector('.page-content')
 
-  console.log(pagecontent.computedStyleMap())
-
   function closeSidebar() {
     sidebar.classList.remove('side-bar--opened')
     pagecontent.removeAttribute('style')

@@ -4,5 +4,3 @@ import './show-all-btn'
 import './burger-btn'
 import './create-form'
 import './description-show-btn'
-
-console.log('Works!')
