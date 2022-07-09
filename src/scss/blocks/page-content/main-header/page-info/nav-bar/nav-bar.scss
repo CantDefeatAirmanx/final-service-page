@@ -35,31 +35,10 @@
       border-color: $navlink-hover-color;
     }
 
-    &--hidden {
-      display: none;
-      @media (min-width: $PC-width) {
-        display: block;
-      }
-    }
-
     &--active {
       border-color: $navlink-hover-color;
       border-radius: 6px;
-      @media (min-width: $PC-width) {
-        border-color: transparent;
-      }
-    }
-
-    &--1120-active {
-      @media (min-width: $PC-width) {
-        border-color: $navlink-hover-color;
-      }
-    }
-
-    &--1120-hidden {
-      @media (min-width: $PC-width) {
-        display: none;
-      }
+      pointer-events: none;
     }
   }
 }
